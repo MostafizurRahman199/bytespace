@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PartnerCarousel from "@/components/PartnerCarousel";
+import CoursesSection from "@/components/CoursesSection";
+import ExploreCategories from "@/components/ExploreCategories";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <PartnerCarousel />
+      <CoursesSection />
+      <ExploreCategories />
     </main>
   );
 }
