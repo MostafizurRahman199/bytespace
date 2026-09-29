@@ -6,6 +6,7 @@ import CoursesSection from "@/components/CoursesSection";
 import ExploreCategories from "@/components/ExploreCategories";
 import ProfessionalGrowth from "@/components/ProfessionalGrowth";
 import JoinAsCreator from "@/components/JoinAsCreator";
+import TestimonialsSection from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ExploreCategories />
       <ProfessionalGrowth />
       <JoinAsCreator />
+      <TestimonialsSection />
     </main>
   );
 }
