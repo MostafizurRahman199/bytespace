@@ -35,7 +35,7 @@ export default function Footer() {
             </Link>
 
             {/* Subtitle under logo - Exact 14px font */}
-            <p className="font-satoshi font-normal text-[#4B4C53] text-[14px] leading-[1.5] mt-5 sm:mt-6 mb-6 sm:mb-7 max-w-[460px]">
+            <p className="font-satoshi font-normal text-[#242528] text-[14px] leading-[1.5] mt-5 sm:mt-6 mb-6 sm:mb-7 max-w-[528px]">
               Stay Up to date with our latest features and releases by joining our newsletter.
             </p>
 

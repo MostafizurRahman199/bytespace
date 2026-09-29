@@ -29,7 +29,7 @@ export default function NewsletterForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="w-full h-[46px] sm:h-[48px] px-6 rounded-full bg-white border border-[#D5D7DA] text-[#141517] placeholder:text-[#71737A] placeholder:font-satoshi placeholder:font-normal text-[15px] sm:text-[16px] font-satoshi focus:outline-none focus:border-[#003BE2] focus:ring-1 focus:ring-[#003BE2] transition-all"
+            className="w-full h-[46px] sm:h-[48px] px-6 rounded-full bg-white border border-[#CED0D3] text-[#141517] placeholder:text-[#71737A] placeholder:font-satoshi placeholder:font-normal text-[15px] sm:text-[16px] font-satoshi focus:outline-none focus:border-[#003BE2] focus:ring-1 focus:ring-[#003BE2] transition-all"
           />
         </div>
 
@@ -43,11 +43,11 @@ export default function NewsletterForm() {
       </form>
 
       {/* Subtitle / Consent disclaimer text - Exact 12px */}
-      <p className="font-satoshi font-normal text-[#4B4C53] text-[12px] leading-[1.6] mt-3.5 sm:mt-4 max-w-[460px]">
+      <p className="font-satoshi font-normal text-[#242528] text-[12px] leading-[1.6] mt-3.5 sm:mt-4 max-w-[460px]">
         By subscribing, you agree to our{" "}
         <Link
           href="/privacy"
-          className="underline underline-offset-2 text-[#4B4C53] hover:text-[#003BE2] transition-colors"
+          className="hover:underline underline-offset-2 text-[#4B4C53] hover:text-[#003BE2] transition-colors"
         >
           Privacy Policy
         </Link>{" "}
