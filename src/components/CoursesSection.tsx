@@ -31,7 +31,7 @@ export default function CoursesSection() {
             <br />
             Build Your Skills
           </h2>
-          <p className="font-satoshi text-[#82868E] text-[15px] sm:text-[16px] leading-[1.6] mt-5 max-w-[820px] mx-auto font-normal">
+          <p className="font-satoshi text-[#82868E] text-[16px] sm:text-[18px] leading-[1.6] mt-5 max-w-[820px] mx-auto font-thin">
             At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
           </p>
         </div>

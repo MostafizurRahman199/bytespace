@@ -51,7 +51,7 @@ export default function ExploreCategories() {
           <h2 className="font-satoshi text-[#141517] text-[32px] sm:text-[40px] lg:text-[48px] font-bold leading-[1.18] tracking-[-0.02em]">
             Explore Diverse Learning Paths at Bytespace
           </h2>
-          <p className="font-satoshi text-[#82868E] text-[15px] sm:text-[16px] leading-[1.6] mt-5 max-w-[820px] mx-auto font-normal">
+          <p className="font-satoshi text-[#82868E] text-[16px] sm:text-[18px] leading-[1.6] mt-5 max-w-[820px] mx-auto font-thin">
             At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there&apos;s something for everyone. Unleash your potential and explore our carefully curated categories.
           </p>
         </div>
