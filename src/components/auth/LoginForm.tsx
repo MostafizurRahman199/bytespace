@@ -22,13 +22,13 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="w-full max-w-[580px] min-h-[784px] bg-white rounded-[24px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-7 sm:px-[72px] py-9 sm:py-[64px] flex flex-col justify-between select-none">
+    <div className="w-full max-w-[580px] min-h-0 lg:min-h-[784px] bg-white rounded-[24px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-6 sm:px-12 lg:px-[72px] py-7 sm:py-10 lg:py-[64px] flex flex-col justify-between select-none">
       <div>
         {/* Card Header */}
         <AuthCardHeader tag="Sign In" title="Welcome Back" />
 
         {/* Form Fields */}
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
           <AuthInput
             id="login-email"
             label="Email"
@@ -61,7 +61,7 @@ export default function LoginForm() {
         </form>
 
         {/* Divider */}
-        <div className="relative my-7 sm:my-8 flex items-center justify-center">
+        <div className="relative my-5 sm:my-8 flex items-center justify-center">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-[#E5E6E8]" />
           </div>

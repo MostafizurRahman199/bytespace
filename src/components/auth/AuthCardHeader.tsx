@@ -19,7 +19,7 @@ export default function AuthCardHeader({
       </span>
 
       {/* Main Title */}
-      <h2 className="font-poppins font-semibold text-[36px] sm:text-[44px] text-[#242528] leading-[1.15] tracking-tight mb-8">
+      <h2 className="font-poppins font-semibold text-[30px] sm:text-[36px] lg:text-[40px] text-[#242528] leading-[1.15] tracking-tight mb-5 sm:mb-8">
         {title}
       </h2>
     </div>

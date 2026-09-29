@@ -33,7 +33,7 @@ export default function AuthVisualShowcase({ mode }: AuthVisualShowcaseProps) {
         <h1 className="font-satoshi font-bold text-white text-[20px] sm:text-[20px] leading-[1.2] tracking-tight">
           {isLogin ? "Sign in with ease" : "Sign up and come in"}
         </h1>
-        <p className="font-satoshi font-normal text-[#E5E6E8] text-[18px] leading-[1.6] mt-3 max-w-[430px]">
+        <p className="font-satoshi font-normal text-[#E5E6E8] text-[18px] leading-[1.6] mt-3 max-w-[475px]">
           {isLogin
             ? "Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge."
             : "The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost"}

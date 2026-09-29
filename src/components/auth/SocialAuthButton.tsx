@@ -19,7 +19,7 @@ export default function SocialAuthButton({
     <button
       type="button"
       aria-label={`Sign in with ${provider}`}
-      className={`w-[72px] h-[72px] rounded-[20px] border border-[#E5E6E8] hover:border-[#CED0D3] hover:bg-[#F9FAFB] active:scale-95 flex items-center justify-center transition-all cursor-pointer group bg-white ${className}`}
+      className={`w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] rounded-[18px] sm:rounded-[20px] border border-[#E5E6E8] hover:border-[#CED0D3] hover:bg-[#F9FAFB] active:scale-95 flex items-center justify-center transition-all cursor-pointer group bg-white ${className}`}
       {...props}
     >
       <img
@@ -27,7 +27,7 @@ export default function SocialAuthButton({
         alt={iconAlt || provider}
         width={iconSize}
         height={iconSize}
-        className="w-[36px] h-[36px] object-contain transition-transform group-hover:scale-105"
+        className="w-[30px] h-[30px] sm:w-[36px] sm:h-[36px] object-contain transition-transform group-hover:scale-105"
       />
     </button>
   );

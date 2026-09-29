@@ -17,22 +17,22 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="w-full max-w-[580px] min-h-[784px] bg-white rounded-[24px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-7 sm:px-[72px] py-9 sm:py-[64px] flex flex-col justify-between select-none">
+    <div className="w-full max-w-[580px] min-h-0 lg:min-h-[784px] bg-white rounded-[24px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-6 sm:px-12 lg:px-[72px] py-7 sm:py-10 lg:py-[64px] flex flex-col justify-between select-none">
       <div>
         {/* Card Header */}
         <AuthCardHeader
           tag="Create an Account"
           title={
             <>
-              Welcome to
+              <span className="whitespace-nowrap">Welcome to</span>
               <br />
-              ByteSpace
+              <span className="whitespace-nowrap">ByteSpace</span>
             </>
           }
         />
 
         {/* Form Fields */}
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
           <AuthInput
             id="register-fullname"
             label="Full Name"
@@ -80,7 +80,7 @@ export default function RegisterForm() {
         text="Already have an account?"
         linkText="Login"
         linkHref="/login"
-        className="pt-8"
+        className="pt-6 sm:pt-8"
       />
     </div>
   );
