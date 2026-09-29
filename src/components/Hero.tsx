@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Button from "./common/Button";
 
 export default function Hero() {
   return (
@@ -76,12 +77,12 @@ export default function Hero() {
             </div>
 
             {/* Search Button */}
-            <button
+            <Button
               type="button"
-              className="font-satoshi bg-[#D4FB20] hover:bg-[#c2eb0d] active:scale-95 text-[#242528] font-medium text-[15px] sm:text-[16px] lg:text-[18px] h-[46px] px-8 sm:px-6 rounded-full transition-all duration-200 shadow-md cursor-pointer shrink-0 flex items-center justify-center w-auto"
+              className="shrink-0 w-auto"
             >
               Search
-            </button>
+            </Button>
           </div>
         </div>
 

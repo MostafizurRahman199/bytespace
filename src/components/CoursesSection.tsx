@@ -26,7 +26,7 @@ export default function CoursesSection() {
       <div className="max-w-[1200px] mx-auto">
         {/* Section Header - Exact Figma Satoshi 700 48px */}
         <div className="text-center max-w-[917px] mx-auto">
-          <h2 className="font-satoshi text-[#141517] text-[34px] sm:text-[42px] lg:text-[48px] font-bold leading-[1.18] tracking-[-0.02em]">
+          <h2 className="font-satoshi text-[#141517] text-[34px] sm:text-[42px] lg:text-[44px] font-semibold leading-[1.18] tracking-[-0.02em]">
             Discover Your Passion,
             <br />
             Build Your Skills

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Button from "../common/Button";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
@@ -33,12 +34,12 @@ export default function NewsletterForm() {
         </div>
 
         {/* Lime Pill Search Button */}
-        <button
+        <Button
           type="submit"
-          className="h-[46px] sm:h-[48px] px-7 sm:px-8 rounded-full bg-[#D4FB20] hover:bg-[#C2EB12] active:scale-95 text-[#141517] font-satoshi font-medium text-[15px] sm:text-[16px] transition-all duration-200 cursor-pointer shrink-0 shadow-sm flex items-center justify-center"
+          className="shrink-0"
         >
           {subscribed ? "Joined!" : "Search"}
-        </button>
+        </Button>
       </form>
 
       {/* Subtitle / Consent disclaimer text - Exact 12px */}

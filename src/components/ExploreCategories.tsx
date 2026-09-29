@@ -48,7 +48,7 @@ export default function ExploreCategories() {
       <div className="max-w-[1202px] mx-auto">
         {/* Section Header - Exact Figma Satoshi 700 48px */}
         <div className="text-center max-w-[917px] mx-auto">
-          <h2 className="font-satoshi text-[#141517] text-[32px] sm:text-[40px] lg:text-[48px] font-bold leading-[1.18] tracking-[-0.02em]">
+          <h2 className="font-satoshi text-[#141517] text-[32px] sm:text-[40px] lg:text-[36px] font-semibold leading-[1.18] tracking-[-0.02em]">
             Explore Diverse Learning Paths at Bytespace
           </h2>
           <p className="font-satoshi text-[#82868E] text-[16px] sm:text-[18px] leading-[1.6] mt-5 max-w-[820px] mx-auto font-normal">

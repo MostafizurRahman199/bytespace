@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import AuthInput from "./AuthInput";
 import AuthCardHeader from "./AuthCardHeader";
 import AuthCardFooter from "./AuthCardFooter";
+import Button from "../common/Button";
 
 export default function RegisterForm() {
   const [fullName, setFullName] = useState("");
@@ -65,12 +66,9 @@ export default function RegisterForm() {
 
           {/* Right-aligned Continue Button */}
           <div className="flex justify-end pt-3">
-            <button
-              type="submit"
-              className="h-[46px] px-8 rounded-full bg-[#D4FB20] hover:bg-[#C2EB12] active:scale-[0.98] text-[#141517] font-satoshi font-medium text-[18px] flex items-center justify-center transition-all cursor-pointer shadow-sm"
-            >
+            <Button type="submit">
               Continue
-            </button>
+            </Button>
           </div>
         </form>
       </div>

@@ -5,6 +5,7 @@ import AuthInput from "./AuthInput";
 import SocialAuthButton from "./SocialAuthButton";
 import AuthCardHeader from "./AuthCardHeader";
 import AuthCardFooter from "./AuthCardFooter";
+import Button from "../common/Button";
 
 const SOCIAL_PROVIDERS = [
   { provider: "Facebook", iconSrc: "/images/auth/facebook_logo.png" },
@@ -51,12 +52,9 @@ export default function LoginForm() {
 
           {/* Right-aligned Sign In Button */}
           <div className="flex justify-end pt-2">
-            <button
-              type="submit"
-              className="h-[46px] px-8 rounded-full bg-[#D4FB20] hover:bg-[#C2EB12] active:scale-[0.98] text-[#141517] font-satoshi font-medium text-[18px] flex items-center justify-center transition-all cursor-pointer shadow-sm"
-            >
+            <Button type="submit">
               Sign In
-            </button>
+            </Button>
           </div>
         </form>
 
