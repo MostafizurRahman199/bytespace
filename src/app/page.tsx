@@ -5,6 +5,7 @@ import PartnerCarousel from "@/components/PartnerCarousel";
 import CoursesSection from "@/components/CoursesSection";
 import ExploreCategories from "@/components/ExploreCategories";
 import ProfessionalGrowth from "@/components/ProfessionalGrowth";
+import JoinAsCreator from "@/components/JoinAsCreator";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <CoursesSection />
       <ExploreCategories />
       <ProfessionalGrowth />
+      <JoinAsCreator />
     </main>
   );
 }
