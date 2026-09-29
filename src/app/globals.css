@@ -178,6 +178,23 @@ body {
   will-change: transform;
 }
 
+/* Card Smooth Stagger Entrance Animation */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-card-fade-in {
+  animation: cardFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: transform, opacity;
+}
+
 /* Scoped adjustments ONLY for 1024px-1439px (strictly does not apply to 1440px+) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .hero-ui-card-1024 {

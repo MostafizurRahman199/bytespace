@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import FeatureChecklist from "./FeatureChecklist";
+import { useScrollReveal } from "./useScrollReveal";
 
 export interface CourseManagementBlockProps {
   title?: React.ReactNode;
@@ -17,10 +20,19 @@ export default function CourseManagementBlock({
   imageSrc = "/images/landingpage/professional_growth/woman_leftside_image.png",
   imageAlt = "Course creator managing students and revenue",
 }: CourseManagementBlockProps) {
+  const { ref: imageRef, isVisible } = useScrollReveal(0.2);
+
   return (
     <div className="mt-14 sm:mt-20 lg:mt-12 xl:mt-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-8">
-      {/* Left Column: Woman Graphic Composition (587x719) */}
-      <div className="relative w-full lg:w-[48%] xl:w-[48%] 2xl:w-[587px] flex justify-center lg:justify-start min-w-0">
+      {/* Left Column: Woman Graphic Composition (587x719) with Smooth Scroll Entrance Animation */}
+      <div
+        ref={imageRef}
+        className={`relative w-full lg:w-[48%] xl:w-[48%] 2xl:w-[587px] flex justify-center lg:justify-start min-w-0 transition-all duration-1000 ease-out will-change-[transform,opacity] ${
+          isVisible
+            ? "opacity-100 translate-y-0 lg:translate-x-0 scale-100"
+            : "opacity-0 translate-y-8 lg:translate-y-0 lg:-translate-x-12 scale-[0.97]"
+        }`}
+      >
         <Image
           src={imageSrc}
           alt={imageAlt}

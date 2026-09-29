@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import GrowthStats, { StatItem } from "./GrowthStats";
+import { useScrollReveal } from "./useScrollReveal";
 
 export interface LearnerGrowthBlockProps {
   title?: React.ReactNode;
@@ -17,6 +20,8 @@ export default function LearnerGrowthBlock({
   imageSrc = "/images/landingpage/professional_growth/man_rigthside_image.png",
   imageAlt = "Student with laptop learning online course",
 }: LearnerGrowthBlockProps) {
+  const { ref: imageRef, isVisible } = useScrollReveal(0.2);
+
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-8 xl:gap-8">
       {/* Left Column: Heading, Subtitle & Stats */}
@@ -42,8 +47,15 @@ export default function LearnerGrowthBlock({
         <GrowthStats stats={stats} className="mt-8 sm:mt-12" />
       </div>
 
-      {/* Right Column: Man Graphic Composition (703x697) */}
-      <div className="relative w-full lg:w-[50%] xl:w-[52%] 2xl:w-[703px] 2xl:-mr-[120px] flex justify-center lg:justify-end min-w-0">
+      {/* Right Column: Man Graphic Composition (703x697) with Smooth Scroll Entrance Animation */}
+      <div
+        ref={imageRef}
+        className={`relative w-full lg:w-[50%] xl:w-[52%] 2xl:w-[703px] 2xl:-mr-[120px] flex justify-center lg:justify-end min-w-0 transition-all duration-1000 ease-out will-change-[transform,opacity] ${
+          isVisible
+            ? "opacity-100 translate-y-0 lg:translate-x-0 scale-100"
+            : "opacity-0 translate-y-8 lg:translate-y-0 lg:translate-x-12 scale-[0.97]"
+        }`}
+      >
         <Image
           src={imageSrc}
           alt={imageAlt}
