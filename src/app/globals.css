@@ -133,6 +133,51 @@ body {
   animation: floatReverse 5.5s ease-in-out infinite;
 }
 
+/* 3D Shapes Organic Levitation Micro-Animations */
+@keyframes floatShape1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(4deg);
+  }
+}
+
+@keyframes floatShape2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(11px) rotate(-3deg);
+  }
+}
+
+@keyframes floatShape3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(-5deg);
+  }
+}
+
+.animate-float-shape-1 {
+  animation: floatShape1 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-shape-2 {
+  animation: floatShape2 7s ease-in-out infinite;
+  animation-delay: 0.6s;
+  will-change: transform;
+}
+
+.animate-float-shape-3 {
+  animation: floatShape3 6.5s ease-in-out infinite;
+  animation-delay: 1.2s;
+  will-change: transform;
+}
+
 /* Scoped adjustments ONLY for 1024px-1439px (strictly does not apply to 1440px+) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .hero-ui-card-1024 {
