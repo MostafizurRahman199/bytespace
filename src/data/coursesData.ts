@@ -84,7 +84,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
     },
     {
       id: "feat-4",
-      title: "Balancing Productivity an...",
+      title: "Balancing Productivity and Life",
       author: "purepearl studio",
       rating: 4.5,
       level: "Beginner",
@@ -97,7 +97,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
     },
     {
       id: "feat-5",
-      title: "Mastering Money Manage...",
+      title: "Mastering Money Management",
       author: "purepearl studio",
       rating: 4.5,
       level: "Beginner",
@@ -110,7 +110,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
     },
     {
       id: "feat-6",
-      title: "From Idea to Startup Succ...",
+      title: "From Idea to Startup Success",
       author: "purepearl studio",
       rating: 4.5,
       level: "Beginner",

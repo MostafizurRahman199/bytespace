@@ -13,3 +13,6 @@ export type { CourseCardProps } from "./CourseCard";
 
 export { default as CoursesGrid } from "./CoursesGrid";
 export type { CoursesGridProps } from "./CoursesGrid";
+
+export { COURSES_BY_CATEGORY, getCoursesForCategory } from "@/data/coursesData";
+export type { Course } from "@/data/coursesData";
