@@ -25,7 +25,7 @@ export default function AuthInput({
         id={id}
         type={type}
         placeholder={placeholder}
-        className={`w-full h-[52px] rounded-[10px] border border-[#D5D7DA] px-4 text-[15px] font-satoshi text-[#141517] placeholder:text-[#82868E] bg-white focus:outline-none focus:border-[#003BE2] focus:ring-1 focus:ring-[#003BE2] transition-all duration-200 ${className}`}
+        className={`w-full h-[52px] rounded-[12px] border border-[#E5E6E8] px-6 py-3 text-[15px] sm:text-[16px] font-satoshi text-[#141517] placeholder:text-[#82868E] bg-white focus:outline-none focus:border-[#003BE2] focus:ring-1 focus:ring-[#003BE2] transition-all duration-200 ${className}`}
         {...props}
       />
     </div>
