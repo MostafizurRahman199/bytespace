@@ -52,29 +52,29 @@ export default function ProfessionalGrowth() {
         {/* =========================================================================
             TOP BLOCK: Your Path to Professional Growth Starts Here!
         ========================================================================= */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-4 xl:gap-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-8 xl:gap-8">
           {/* Left Column: Heading, Subtitle & Stats */}
-          <div className="w-full lg:max-w-[540px] shrink-0">
-            {/* Title - Exact Figma Satoshi 700 48px */}
-            <h2 className="font-satoshi text-[#141517] text-[34px] sm:text-[42px] lg:text-[48px] font-bold leading-[1.16] tracking-[-0.02em]">
+          <div className="w-full lg:w-[50%] xl:w-[48%] 2xl:w-[577px] shrink-0 lg:shrink">
+            {/* Title - Exact Figma Poppins SemiBold 44px, line-height 120%, letter-spacing -1%, #242528 */}
+            <h2 className="font-poppins text-[#242528] text-[28px] sm:text-[34px] md:text-[38px] xl:text-[44px] font-semibold leading-[1.2] tracking-[-0.01em]">
               Your Path to Professional
               <br className="hidden sm:inline" />{" "}
               Growth Starts Here!
             </h2>
 
-            {/* Description - Exact Figma Satoshi 400 16px */}
-            <p className="font-satoshi text-[#82868E] text-[15px] sm:text-[16px] leading-[1.6] mt-6 sm:mt-7 max-w-[472px] font-normal">
+            {/* Description - Satoshi font-thin (font-weight: 100) 18px #4B4C53 */}
+            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] mt-5 sm:mt-7 max-w-[490px] font-thin">
               Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
             </p>
 
-            {/* Stats Row - Exact Figma 12K / 70+ / 16 */}
-            <div className="mt-8 sm:mt-12 flex items-center gap-8 sm:gap-12 lg:gap-14">
+            {/* Stats Row - Poppins medium 36px value, Satoshi font-thin 18px #4B4C53 label */}
+            <div className="mt-8 sm:mt-12 flex items-center gap-6 sm:gap-10 lg:gap-8 xl:gap-14">
               {STATS_DATA.map((stat) => (
                 <div key={stat.label} className="flex flex-col">
-                  <span className="font-satoshi font-bold text-[#003BE2] text-[28px] sm:text-[32px] leading-none tracking-tight">
+                  <span className="font-poppins font-medium text-[#003BE2] text-[26px] sm:text-[30px] xl:text-[36px] leading-none tracking-tight">
                     {stat.value}
                   </span>
-                  <span className="font-satoshi text-[#82868E] text-[14px] sm:text-[15px] mt-2 font-normal">
+                  <span className="font-satoshi text-[#4B4C53] text-[14px] sm:text-[16px] xl:text-[18px] mt-2 font-thin">
                     {stat.label}
                   </span>
                 </div>
@@ -83,14 +83,14 @@ export default function ProfessionalGrowth() {
           </div>
 
           {/* Right Column: Man Graphic Composition (703x697) */}
-          <div className="relative w-full max-w-[600px] lg:max-w-[703px] xl:-mr-[120px] flex justify-center lg:justify-end shrink-0">
+          <div className="relative w-full lg:w-[50%] xl:w-[52%] 2xl:w-[703px] 2xl:-mr-[120px] flex justify-center lg:justify-end min-w-0">
             <Image
               src="/images/landingpage/professional_growth/man_rigthside_image.png"
               alt="Student with laptop learning online course"
               width={703}
               height={697}
               priority
-              className="w-full h-auto max-w-[560px] lg:max-w-[703px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.06)] hover:scale-[1.01] transition-transform duration-500"
+              className="w-full h-auto max-w-[480px] lg:max-w-full xl:max-w-[703px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.06)] hover:scale-[1.01] transition-transform duration-500"
             />
           </div>
         </div>
@@ -98,30 +98,30 @@ export default function ProfessionalGrowth() {
         {/* =========================================================================
             BOTTOM BLOCK: Create & Manage Courses Easily.
         ========================================================================= */}
-        <div className="mt-14 sm:mt-20 lg:mt-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-8">
+        <div className="mt-14 sm:mt-20 lg:mt-12 xl:mt-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-8">
           {/* Left Column: Woman Graphic Composition (587x719) */}
-          <div className="relative w-full max-w-[520px] lg:max-w-[587px] flex justify-center lg:justify-start shrink-0">
+          <div className="relative w-full lg:w-[48%] xl:w-[48%] 2xl:w-[587px] flex justify-center lg:justify-start min-w-0">
             <Image
               src="/images/landingpage/professional_growth/woman_leftside_image.png"
               alt="Course creator managing students and revenue"
               width={587}
               height={719}
-              className="w-full h-auto max-w-[480px] lg:max-w-[587px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.06)] hover:scale-[1.01] transition-transform duration-500"
+              className="w-full h-auto max-w-[420px] lg:max-w-full xl:max-w-[587px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.06)] hover:scale-[1.01] transition-transform duration-500"
             />
           </div>
 
           {/* Right Column: Heading, Subtitle & Feature Checklist */}
-          <div className="w-full lg:max-w-[520px] shrink-0">
-            {/* Title - Exact Figma Satoshi 700 48px */}
-            <h2 className="font-satoshi text-[#141517] text-[34px] sm:text-[42px] lg:text-[48px] font-bold leading-[1.16] tracking-[-0.02em]">
+          <div className="w-full lg:w-[52%] xl:w-[52%] 2xl:w-[520px] min-w-0">
+            {/* Title - Exact Figma Poppins SemiBold 44px, line-height 120%, letter-spacing -1%, #242528 */}
+            <h2 className="font-poppins text-[#242528] text-[28px] sm:text-[34px] md:text-[38px] xl:text-[44px] font-semibold leading-[1.2] tracking-[-0.01em]">
               Create & Manage
               <br className="hidden sm:inline" />{" "}
               Courses Easily.
             </h2>
 
-            {/* Description - Exact Figma Satoshi 400 16px with bold ByteSpace */}
-            <p className="font-satoshi text-[#82868E] text-[15px] sm:text-[16px] leading-[1.6] mt-6 sm:mt-7 max-w-[480px] font-normal">
-              <strong className="font-bold text-[#141517]">ByteSpace</strong>{" "}
+            {/* Description - Satoshi font-thin (font-weight: 100) 18px #4B4C53 with bold ByteSpace */}
+            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] mt-5 sm:mt-6 max-w-[490px] font-thin">
+              <strong className="font-semibold text-[#141517]">ByteSpace</strong>{" "}
               supports individuals or entities in the creation, publication, and administration of educational courses.
             </p>
 
