@@ -84,7 +84,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
     },
     {
       id: "feat-4",
-      title: "Balancing Productivity an...",
+      title: "Balancing Productivity and Life",
       author: "purepearl studio",
       rating: 4.5,
       level: "Beginner",
@@ -97,7 +97,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
     },
     {
       id: "feat-5",
-      title: "Mastering Money Manage...",
+      title: "Mastering Money Management",
       author: "purepearl studio",
       rating: 4.5,
       level: "Beginner",
@@ -110,7 +110,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
     },
     {
       id: "feat-6",
-      title: "From Idea to Startup Succ...",
+      title: "From Idea to Startup Success",
       author: "purepearl studio",
       rating: 4.5,
       level: "Beginner",
@@ -160,7 +160,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
       lessons: 18,
       duration: "2 hours 50 mins",
       comments: 63,
-      image: "https://images.unsplash.com/photo-1520523839898-507127a72d3f?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&w=700&q=80",
       category: "Music",
     },
     {
@@ -442,7 +442,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
       lessons: 16,
       duration: "2 hours 15 mins",
       comments: 40,
-      image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=700&q=80",
       category: "Animation",
     },
   ],
@@ -523,7 +523,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
       lessons: 21,
       duration: "3 hours 00 mins",
       comments: 63,
-      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=700&q=80",
       category: "Social Media",
     },
   ],
@@ -1213,7 +1213,7 @@ export const COURSES_BY_CATEGORY: Record<string, Course[]> = {
       lessons: 30,
       duration: "4 hours 50 mins",
       comments: 92,
-      image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=700&q=80",
       category: "Film & Video",
     },
     {

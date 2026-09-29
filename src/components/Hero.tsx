@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Button from "./common/Button";
 
 export default function Hero() {
   return (
@@ -76,62 +77,82 @@ export default function Hero() {
             </div>
 
             {/* Search Button */}
-            <button
+            <Button
               type="button"
-              className="font-satoshi bg-[#D4FB20] hover:bg-[#c2eb0d] active:scale-95 text-[#242528] font-medium text-[15px] sm:text-[16px] lg:text-[18px] h-[46px] px-8 sm:px-6 rounded-full transition-all duration-200 shadow-md cursor-pointer shrink-0 flex items-center justify-center w-auto"
+              className="shrink-0 w-auto"
             >
               Search
-            </button>
+            </Button>
           </div>
         </div>
 
         {/* Decorative White 3D Shapes - Kept locked with the man inside the 1440px canvas */}
         {/* 2. Left White 3D Squiggle */}
-        <div className="hidden sm:block absolute left-[10%] lg:left-[180px] top-[350px] lg:top-[370px] w-[90px] sm:w-[120px] lg:w-[170px] h-auto pointer-events-none z-20 animate-float-reverse">
-          <Image
-            src="/images/landingpage/hero/left_white_sprial.png"
-            alt="White 3D Squiggle"
-            width={176}
-            height={176}
-            className="object-contain w-full h-auto drop-shadow-xl"
-            priority
-          />
+        <div
+          className="hidden sm:block absolute left-[10%] lg:left-[180px] top-[350px] lg:top-[370px] w-[90px] sm:w-[120px] lg:w-[170px] h-auto pointer-events-none z-20 animate-hero-rise"
+          style={{ animationDelay: "250ms" }}
+        >
+          <div className="w-full h-auto animate-float-reverse">
+            <Image
+              src="/images/landingpage/hero/left_white_sprial.png"
+              alt="White 3D Squiggle"
+              width={176}
+              height={176}
+              className="object-contain w-full h-auto drop-shadow-xl"
+              priority
+            />
+          </div>
         </div>
 
         {/* 3. Left Bottom White Torus / Donut - Little bit left and bigger */}
-        <div className="absolute left-[-20px] sm:left-[15px] lg:left-[35px] bottom-[-20px] sm:bottom-[15px] lg:bottom-[35px] w-[190px] sm:w-[260px] lg:w-[320px] h-auto pointer-events-none z-20 animate-float-slow">
-          <Image
-            src="/images/landingpage/hero/left_below_oval.png"
-            alt="White 3D Torus"
-            width={346}
-            height={343}
-            className="object-contain w-full h-auto drop-shadow-2xl"
-            priority
-          />
+        <div
+          className="absolute left-[-20px] sm:left-[15px] lg:left-[35px] bottom-[-20px] sm:bottom-[15px] lg:bottom-[35px] w-[190px] sm:w-[260px] lg:w-[320px] h-auto pointer-events-none z-20 animate-hero-rise"
+          style={{ animationDelay: "150ms" }}
+        >
+          <div className="w-full h-auto animate-float-slow">
+            <Image
+              src="/images/landingpage/hero/left_below_oval.png"
+              alt="White 3D Torus"
+              width={346}
+              height={343}
+              className="object-contain w-full h-auto drop-shadow-2xl"
+              priority
+            />
+          </div>
         </div>
 
         {/* 5. Right White 3D Pyramid */}
-        <div className="hidden sm:block absolute right-[8%] lg:right-[150px] top-[320px] lg:top-[340px] w-[110px] sm:w-[140px] lg:w-[188px] h-auto pointer-events-none z-20 animate-float-reverse">
-          <Image
-            src="/images/landingpage/hero/right_white_piramid.png"
-            alt="White 3D Pyramid"
-            width={189}
-            height={189}
-            className="object-contain w-full h-auto drop-shadow-xl"
-            priority
-          />
+        <div
+          className="hidden sm:block absolute right-[8%] lg:right-[150px] top-[320px] lg:top-[340px] w-[110px] sm:w-[140px] lg:w-[188px] h-auto pointer-events-none z-20 animate-hero-rise"
+          style={{ animationDelay: "300ms" }}
+        >
+          <div className="w-full h-auto animate-float-reverse">
+            <Image
+              src="/images/landingpage/hero/right_white_piramid.png"
+              alt="White 3D Pyramid"
+              width={189}
+              height={189}
+              className="object-contain w-full h-auto drop-shadow-xl"
+              priority
+            />
+          </div>
         </div>
 
         {/* 6. Right Bottom White 3D Spiral - Little bit right (not too much) */}
-        <div className="absolute right-[-20px] sm:right-[5px] lg:right-[0px] bottom-[-20px] sm:bottom-[5px] lg:bottom-[15px] w-[170px] sm:w-[230px] lg:w-[315px] h-auto pointer-events-none z-20 animate-float-slow">
-          <Image
-            src="/images/landingpage/hero/right_white_spiral.png"
-            alt="White 3D Spiral"
-            width={317}
-            height={332}
-            className="object-contain w-full h-auto drop-shadow-2xl"
-            priority
-          />
+        <div
+          className="absolute right-[-20px] sm:right-[5px] lg:right-[0px] bottom-[-20px] sm:bottom-[5px] lg:bottom-[15px] w-[170px] sm:w-[230px] lg:w-[315px] h-auto pointer-events-none z-20 animate-hero-rise"
+          style={{ animationDelay: "200ms" }}
+        >
+          <div className="w-full h-auto animate-float-slow">
+            <Image
+              src="/images/landingpage/hero/right_white_spiral.png"
+              alt="White 3D Spiral"
+              width={317}
+              height={332}
+              className="object-contain w-full h-auto drop-shadow-2xl"
+              priority
+            />
+          </div>
         </div>
 
         {/* Central Visual Composition with Man, Arc, and Floating Cards */}
@@ -161,7 +182,10 @@ export default function Hero() {
           </div>
 
           {/* Card 1: UI/UX Design - Positioned more left and below on desktop (>= 1440px) */}
-          <div className="absolute left-3 sm:left-[16%] lg:left-[24.5%] top-7 sm:top-[20%] lg:top-[29%] hero-ui-card-1024 z-30 pointer-events-auto">
+          <div
+            className="absolute left-3 sm:left-[16%] lg:left-[24.5%] top-7 sm:top-[20%] lg:top-[29%] hero-ui-card-1024 z-30 pointer-events-auto animate-hero-rise"
+            style={{ animationDelay: "400ms" }}
+          >
             <div className="bg-white rounded-[14px] sm:rounded-[16px] p-3 sm:p-4 shadow-[0_10px_28px_rgba(0,0,0,0.12)] text-left min-w-[150px] sm:min-w-[195px] lg:min-w-[208px] hover:scale-105 transition-all duration-300 cursor-default">
               <h3 className="font-satoshi text-[#242528] font-semibold sm:font-medium text-[13px] sm:text-[14px] lg:text-[16px] leading-[1.2] tracking-normal">
                 UI/UX Design
@@ -179,7 +203,10 @@ export default function Hero() {
           </div>
 
           {/* Card 2: Learning Progress - Positioned slightly below and left on desktop (>= 1440px) */}
-          <div className="absolute right-3 sm:right-[15%] lg:right-[28.5%] top-[26%] sm:top-[22%] lg:top-[30%] hero-learning-card-1024 z-30 pointer-events-auto">
+          <div
+            className="absolute right-3 sm:right-[15%] lg:right-[28.5%] top-[26%] sm:top-[22%] lg:top-[30%] hero-learning-card-1024 z-30 pointer-events-auto animate-hero-rise"
+            style={{ animationDelay: "550ms" }}
+          >
             <div className="bg-white rounded-[14px] sm:rounded-[16px] p-3 sm:p-4 shadow-[0_10px_28px_rgba(0,0,0,0.12)] text-left min-w-[145px] sm:min-w-[200px] lg:min-w-[232px] hover:scale-105 transition-all duration-300 cursor-default">
               <p className="font-satoshi text-[#242528] text-[11px] sm:text-[13px] lg:text-[14px] font-medium leading-[1.2]">
                 Learning Progress
@@ -195,7 +222,10 @@ export default function Hero() {
           </div>
 
           {/* Card 3: Happy Students - Exact Figma left-[22.8%] bottom-[66px] on 1440px+ */}
-          <div className="absolute left-3 sm:left-[12%] lg:left-[22.8%] bottom-3 sm:bottom-[60px] lg:bottom-[66px] z-30 pointer-events-auto">
+          <div
+            className="absolute left-3 sm:left-[12%] lg:left-[22.8%] bottom-3 sm:bottom-[60px] lg:bottom-[66px] z-30 pointer-events-auto animate-hero-rise"
+            style={{ animationDelay: "650ms" }}
+          >
             <div className="bg-white rounded-[14px] sm:rounded-[16px] p-3 sm:p-4 shadow-[0_12px_32px_rgba(0,0,0,0.14)] text-left min-w-[185px] sm:min-w-[230px] lg:min-w-[258px] hover:scale-105 transition-all duration-300 cursor-default">
               <h3 className="font-satoshi text-[#242528] font-semibold sm:font-medium text-[13px] sm:text-[14px] lg:text-[16px] leading-[1.2]">
                 Happy Students

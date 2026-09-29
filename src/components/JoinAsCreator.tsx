@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Button from "./common/Button";
 
 export default function JoinAsCreator() {
   return (
@@ -112,13 +113,10 @@ export default function JoinAsCreator() {
         </p>
 
         {/* Action Button - Exact Figma 46px height pill button */}
-        <div className="mt-7 sm:mt-8">
-          <button
-            type="button"
-            className="font-satoshi bg-[#D4FB20] hover:bg-[#c2eb0d] active:scale-95 text-[#242528] font-medium text-[15px] sm:text-[16px] h-[46px] px-8 rounded-full transition-all duration-200 shadow-md cursor-pointer flex items-center justify-center"
-          >
+        <div className="mt-7 sm:mt-8 flex justify-center">
+          <Button type="button">
             Join as Creator
-          </button>
+          </Button>
         </div>
       </div>
     </section>
