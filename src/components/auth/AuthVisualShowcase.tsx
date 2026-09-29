@@ -30,10 +30,10 @@ export default function AuthVisualShowcase({ mode }: AuthVisualShowcaseProps) {
     <div className="w-full max-w-[500px] select-none">
       {/* Top Header Text */}
       <div className="mb-8">
-        <h1 className="font-satoshi font-bold text-white text-[24px] sm:text-[26px] leading-[1.2] tracking-tight">
+        <h1 className="font-satoshi font-bold text-white text-[20px] sm:text-[20px] leading-[1.2] tracking-tight">
           {isLogin ? "Sign in with ease" : "Sign up and come in"}
         </h1>
-        <p className="font-satoshi font-normal text-[#E5E6E8] text-[15px] leading-[1.6] mt-3 max-w-[430px]">
+        <p className="font-satoshi font-normal text-[#E5E6E8] text-[18px] leading-[1.6] mt-3 max-w-[430px]">
           {isLogin
             ? "Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge."
             : "The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost"}
@@ -89,13 +89,13 @@ export default function AuthVisualShowcase({ mode }: AuthVisualShowcaseProps) {
         </div>
 
         {/* 2. Top-Left 3D Lime Oval */}
-        <div className="absolute left-[38px] top-[30px] w-[130px] h-[129px] z-30 transition-transform duration-700 hover:scale-105">
+        <div className="absolute left-[38px] top-[30px] w-[130px] h-[129px] z-30 transition-transform duration-500 hover:scale-110 cursor-pointer pointer-events-auto">
           <Image
             src="/images/auth/card_top_left_lime_oval.png"
             alt="Lime Oval 3D Shape"
             width={130}
             height={129}
-            className="w-full h-auto object-contain drop-shadow-lg"
+            className="w-full h-auto object-contain drop-shadow-lg animate-float-shape-1"
             priority
           />
         </div>
@@ -205,13 +205,13 @@ export default function AuthVisualShowcase({ mode }: AuthVisualShowcaseProps) {
         </div>
 
         {/* 4. Bottom-Left 3D Lime Cone */}
-        <div className="absolute -left-2.8 top-[400px] w-[180px] h-[180px] z-30 transition-transform duration-700 hover:scale-105">
+        <div className="absolute -left-2.8 top-[400px] w-[180px] h-[180px] z-30 transition-transform duration-500 hover:scale-110 cursor-pointer pointer-events-auto">
           <Image
             src="/images/auth/card_bottom_left_lime_cone.png"
             alt="Lime Cone 3D Shape"
             width={180}
             height={180}
-            className="w-full h-auto object-contain drop-shadow-lg"
+            className="w-full h-auto object-contain drop-shadow-lg animate-float-shape-2"
             priority
           />
         </div>
@@ -260,13 +260,13 @@ export default function AuthVisualShowcase({ mode }: AuthVisualShowcaseProps) {
         </div>
 
         {/* 6. Right Bottom 3D White Spiral */}
-        <div className="absolute left-[335px] top-[315px] w-[185px] h-[184px] z-40 pointer-events-none transition-transform duration-700 hover:scale-105">
+        <div className="absolute left-[335px] top-[315px] w-[185px] h-[184px] z-40 transition-transform duration-500 hover:scale-110 cursor-pointer pointer-events-auto">
           <Image
             src="/images/auth/card_right_bottom_white_spiral.png"
             alt="White Spiral 3D Shape"
             width={185}
             height={184}
-            className="w-full h-auto object-contain drop-shadow-md"
+            className="w-full h-auto object-contain drop-shadow-md animate-float-shape-3"
             priority
           />
         </div>

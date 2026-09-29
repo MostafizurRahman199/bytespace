@@ -1,8 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import AuthInput from "./AuthInput";
+import SocialAuthButton from "./SocialAuthButton";
+import AuthCardHeader from "./AuthCardHeader";
+import AuthCardFooter from "./AuthCardFooter";
+
+const SOCIAL_PROVIDERS = [
+  { provider: "Facebook", iconSrc: "/images/auth/facebook_logo.png" },
+  { provider: "Google", iconSrc: "/images/auth/google_logo.png" },
+];
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -17,15 +24,8 @@ export default function LoginForm() {
   return (
     <div className="w-full max-w-[580px] min-h-[784px] bg-white rounded-[24px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-7 sm:px-[72px] py-9 sm:py-[64px] flex flex-col justify-between select-none">
       <div>
-        {/* Top Tag */}
-        <span className="font-satoshi font-medium text-[16px] text-[#003BE2] leading-none block mb-2">
-          Sign In
-        </span>
-
-        {/* Title */}
-        <h2 className="font-poppins font-bold text-[36px] sm:text-[40px] text-[#141517] leading-[1.15] tracking-tight mb-8">
-          Welcome Back
-        </h2>
+        {/* Card Header */}
+        <AuthCardHeader tag="Sign In" title="Welcome Back" />
 
         {/* Form Fields */}
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -53,7 +53,7 @@ export default function LoginForm() {
           <div className="flex justify-end pt-2">
             <button
               type="submit"
-              className="h-[46px] px-8 rounded-full bg-[#D4FB20] hover:bg-[#C2EB12] active:scale-[0.98] text-[#141517] font-satoshi font-medium text-[15px] flex items-center justify-center transition-all cursor-pointer shadow-sm"
+              className="h-[46px] px-8 rounded-full bg-[#D4FB20] hover:bg-[#C2EB12] active:scale-[0.98] text-[#141517] font-satoshi font-medium text-[18px] flex items-center justify-center transition-all cursor-pointer shadow-sm"
             >
               Sign In
             </button>
@@ -70,52 +70,25 @@ export default function LoginForm() {
           </span>
         </div>
 
-        {/* Social Buttons with exact Figma rounded-[20px] borders and downloaded logos */}
+        {/* Social Buttons */}
         <div className="flex items-center justify-center gap-4">
-          {/* Facebook */}
-          <button
-            type="button"
-            aria-label="Sign in with Facebook"
-            className="w-[72px] h-[72px] rounded-[20px] border border-[#E5E6E8] hover:border-[#CED0D3] hover:bg-[#F9FAFB] active:scale-95 flex items-center justify-center transition-all cursor-pointer group shadow-sm bg-white"
-          >
-            <img
-              src="/images/auth/facebook_logo.png"
-              alt="Facebook"
-              width={36}
-              height={36}
-              className="w-[36px] h-[36px] object-contain transition-transform group-hover:scale-105"
+          {SOCIAL_PROVIDERS.map((item) => (
+            <SocialAuthButton
+              key={item.provider}
+              provider={item.provider}
+              iconSrc={item.iconSrc}
             />
-          </button>
-
-          {/* Google */}
-          <button
-            type="button"
-            aria-label="Sign in with Google"
-            className="w-[72px] h-[72px] rounded-[20px] border border-[#E5E6E8] hover:border-[#CED0D3] hover:bg-[#F9FAFB] active:scale-95 flex items-center justify-center transition-all cursor-pointer group shadow-sm bg-white"
-          >
-            <img
-              src="/images/auth/google_logo.png"
-              alt="Google"
-              width={36}
-              height={36}
-              className="w-[36px] h-[36px] object-contain transition-transform group-hover:scale-105"
-            />
-          </button>
+          ))}
         </div>
       </div>
 
       {/* Bottom Link */}
-      <div className="text-center pt-6">
-        <p className="font-satoshi text-[14px] text-[#4B4C53]">
-          New user?{" "}
-          <Link
-            href="/register"
-            className="text-[#003BE2] hover:underline font-medium transition-colors"
-          >
-            Create an account
-          </Link>
-        </p>
-      </div>
+      <AuthCardFooter
+        text="New user?"
+        linkText="Create an account"
+        linkHref="/register"
+        className="pt-6"
+      />
     </div>
   );
 }
