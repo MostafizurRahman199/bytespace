@@ -51,8 +51,8 @@ export default function Hero() {
             Courses Available
           </h1>
 
-          {/* Subtitle - Satoshi font-thin 18px */}
-          <p className="font-satoshi text-[#E5E6E8] text-center text-[16px] sm:text-[18px] font-thin leading-[1.6] max-w-[819px] mx-auto mt-8 px-4">
+          {/* Subtitle - Satoshi font-regular 18px */}
+          <p className="font-satoshi text-[#E5E6E8] text-center text-[16px] sm:text-[18px] font-normal leading-[1.6] max-w-[819px] mx-auto mt-8 px-4">
             Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
           </p>
 

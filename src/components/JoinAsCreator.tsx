@@ -106,8 +106,8 @@ export default function JoinAsCreator() {
           Creator with ByteSpace
         </h2>
 
-        {/* Subtitle - Satoshi font-thin (font-weight: 100) 18px #E5E6E8 */}
-        <p className="font-satoshi text-[#E5E6E8] text-[15px] sm:text-[16px] xl:text-[18px] font-thin leading-[1.6] max-w-[880px] mx-auto mt-5 sm:mt-6 px-2">
+        {/* Subtitle - Satoshi font-regular 18px #E5E6E8 */}
+        <p className="font-satoshi text-[#E5E6E8] text-[15px] sm:text-[16px] xl:text-[18px] font-normal leading-[1.6] max-w-[880px] mx-auto mt-5 sm:mt-6 px-2">
           Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.
         </p>
 

@@ -150,9 +150,9 @@ export default function TestimonialsSection() {
             </h2>
           </div>
 
-          {/* Right Column: Subtitle (Exact 5 lines matching Figma) */}
+          {/* Right Column: Subtitle (Exact 5 lines matching Figma) - font-regular */}
           <div className="w-full lg:max-w-[570px] xl:max-w-[585px]">
-            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] font-thin">
+            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] font-normal">
               At ByteSpace, our vibrant community of learners and creators is at the{" "}
               heart of what we do. Hear directly from those who have experienced the{" "}
               transformative journey of learning and creating on our platform. Explore{" "}

@@ -62,19 +62,19 @@ export default function ProfessionalGrowth() {
               Growth Starts Here!
             </h2>
 
-            {/* Description - Satoshi font-thin (font-weight: 100) 18px #4B4C53 */}
-            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] mt-5 sm:mt-7 max-w-[490px] font-thin">
+            {/* Description - Satoshi font-regular 18px #4B4C53 */}
+            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] mt-5 sm:mt-7 max-w-[490px] font-normal">
               Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
             </p>
 
-            {/* Stats Row - Poppins medium 36px value, Satoshi font-thin 18px #4B4C53 label */}
+            {/* Stats Row - Poppins medium 36px value, Satoshi font-regular 18px #4B4C53 label */}
             <div className="mt-8 sm:mt-12 flex items-center gap-6 sm:gap-10 lg:gap-8 xl:gap-14">
               {STATS_DATA.map((stat) => (
                 <div key={stat.label} className="flex flex-col">
                   <span className="font-poppins font-medium text-[#003BE2] text-[26px] sm:text-[30px] xl:text-[36px] leading-none tracking-tight">
                     {stat.value}
                   </span>
-                  <span className="font-satoshi text-[#4B4C53] text-[14px] sm:text-[16px] xl:text-[18px] mt-2 font-thin">
+                  <span className="font-satoshi text-[#4B4C53] text-[14px] sm:text-[16px] xl:text-[18px] mt-2 font-normal">
                     {stat.label}
                   </span>
                 </div>
@@ -119,8 +119,8 @@ export default function ProfessionalGrowth() {
               Courses Easily.
             </h2>
 
-            {/* Description - Satoshi font-thin (font-weight: 100) 18px #4B4C53 with bold ByteSpace */}
-            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] mt-5 sm:mt-6 max-w-[490px] font-thin">
+            {/* Description - Satoshi font-regular 18px #4B4C53 with bold ByteSpace */}
+            <p className="font-satoshi text-[#4B4C53] text-[15px] sm:text-[16px] xl:text-[18px] leading-[1.6] mt-5 sm:mt-6 max-w-[490px] font-normal">
               <strong className="font-semibold text-[#141517]">ByteSpace</strong>{" "}
               supports individuals or entities in the creation, publication, and administration of educational courses.
             </p>

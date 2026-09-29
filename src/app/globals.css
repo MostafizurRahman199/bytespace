@@ -92,6 +92,10 @@ body {
   font-family: var(--font-satoshi), 'Satoshi', sans-serif !important;
 }
 
+.font-regular {
+  font-weight: 400 !important;
+}
+
 /* 120px x 120px Grid Pattern directly from Figma */
 .bytespace-grid-bg {
   background-color: #003be2;
