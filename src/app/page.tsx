@@ -7,6 +7,7 @@ import ExploreCategories from "@/components/ExploreCategories";
 import ProfessionalGrowth from "@/components/ProfessionalGrowth";
 import JoinAsCreator from "@/components/JoinAsCreator";
 import TestimonialsSection from "@/components/testimonials";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <ProfessionalGrowth />
       <JoinAsCreator />
       <TestimonialsSection />
+      <Footer />
     </main>
   );
 }
