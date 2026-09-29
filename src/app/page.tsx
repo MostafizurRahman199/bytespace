@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import PartnerCarousel from "@/components/PartnerCarousel";
 import CoursesSection from "@/components/CoursesSection";
 import ExploreCategories from "@/components/ExploreCategories";
+import ProfessionalGrowth from "@/components/ProfessionalGrowth";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <PartnerCarousel />
       <CoursesSection />
       <ExploreCategories />
+      <ProfessionalGrowth />
     </main>
   );
 }
